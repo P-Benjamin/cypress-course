@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Web</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <p>Chiffrement de César</p>
+
+    <form action="#" method="post">
+        <div>
+            <label for="cipher-key">Cipher key</label>
+            <input type="number" min="1" max="25">
+        </div>
+        <div>
+            <label for="cipher-key">Message</label>
+            <textarea name="cipher-key" placeholder="Enter a message..."></textarea>
+        </div>
+
+        <button id="btn_cipher"type="submit">Cipher</button>
+    </form>
+
+    <p id="result"></p>
+</body>
+</html>
