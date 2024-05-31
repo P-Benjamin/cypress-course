@@ -1,28 +1,28 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Web</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js" defer></script>
-</head>
-<body>
-    <p>Chiffrement de César</p>
-
-    <form action="#" method="post">
-        <div>
-            <label for="cipher-key">Cipher key</label>
-            <input type="number" min="1" max="25">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/main.js" defer></script>
+        <title>Chiffre de César</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="title">
+                <p style="font-size: 25px; color: black;"><b>Caesar Cypher</b></p>
+                Vanilla JS
+            </div>
+            <div class="form">
+                <form>
+                    <label for="shift">Cypher key</label><br>
+                    <input id="shift" name="shift" type="text" /><br><br>
+                    <textarea id="text" style="height: 25%;"></textarea><br><br>
+                    <button type="button" id="Cypher" name="Cypher" data-cy="CypherButton">Cypher</button>
+                </form>
+            </div>
+            <div class="ceasar-result">
+                <p id="result" style="color: green;"></p>
+            </div>
         </div>
-        <div>
-            <label for="cipher-key">Message</label>
-            <textarea name="cipher-key" placeholder="Enter a message..."></textarea>
-        </div>
-
-        <button id="btn_cipher"type="submit">Cipher</button>
-    </form>
-
-    <p id="result"></p>
-</body>
+    </body>
 </html>
